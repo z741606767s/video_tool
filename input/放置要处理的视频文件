@@ -1,0 +1,19 @@
+    # FFmpeg 命令
+    command = [
+        FFMPEG_PATH,
+        "-loglevel", "debug",  # 打印详细日志
+        "-i", input_video,  # 输入视频
+        # "-filter_complex", (
+        #     f"[0:v]crop={W}:{H}:{X}:{Y},scale={W // 10}:{H // 10},scale={W}:{H}:flags=neighbor[m];"
+        #     f"[0:v][m]overlay={X}:{Y}[out]"
+        # ),  # 处理马赛克并覆盖回原视频1
+        "-filter_complex", f"[0:v]crop={W}:{H}:{X}:{Y},boxblur={BLUR_KERNEL}:{BLUR_SIGMA}[blurred];[0:v][blurred]overlay={X}:{Y}[out]",  # 处理马赛克
+        "-map", "[out]",  # 指定视频流
+        *map_audio,  # 保留原音频（如果存在）
+        "-c:v", codec,  # 视频编码
+        "-preset", preset,  # 处理速度优先级
+        "-crf", str(crf),  # 质量控制
+        *audio_option,  # 压缩音频
+        "-threads", "4",  # 多线程处理
+        "-y", output_video  # 覆盖输出文件
+    ]

@@ -1,0 +1,15 @@
+2025-02-07 16:59:55,225 - INFO - 日志系统初始化完成，日志文件路径: logs/video_tool.log
+2025-02-07 16:59:55,227 - INFO - ✅ 配置文件路径: /Users/yaosen/PycharmProjects/ffmpeg/config/config.ini
+2025-02-07 16:59:55,227 - INFO - ✅ 输入目录: /Users/yaosen/PycharmProjects/ffmpeg/./input
+2025-02-07 16:59:55,227 - INFO - ✅ 输出目录: /Users/yaosen/PycharmProjects/ffmpeg/./output
+2025-02-07 16:59:55,227 - INFO - ✅ 使用 FFmpeg: /Users/yaosen/PycharmProjects/ffmpeg/ffmpeg/mac/ffmpeg
+2025-02-07 16:59:55,227 - INFO - 📌 设置环境变量 IMAGEIO_FFMPEG_EXE = /Users/yaosen/PycharmProjects/ffmpeg/ffmpeg/mac/ffmpeg
+2025-02-07 16:59:55,227 - INFO - 开始批量处理视频...
+2025-02-07 16:59:55,227 - INFO - 🔄 发现 2 个视频，开始处理...
+2025-02-07 16:59:55,227 - INFO - 🎬 处理视频: 1.mp4 -> /Users/yaosen/PycharmProjects/ffmpeg/./output/1.mp4
+2025-02-07 16:59:55,227 - INFO - 开始处理视频: /Users/yaosen/PycharmProjects/ffmpeg/./input/1.mp4
+2025-02-07 17:00:16,216 - INFO - ✅ 处理完成: /Users/yaosen/PycharmProjects/ffmpeg/./output/1.mp4
+2025-02-07 17:00:16,216 - INFO - 🎬 处理视频: 2.mp4 -> /Users/yaosen/PycharmProjects/ffmpeg/./output/2.mp4
+2025-02-07 17:00:16,217 - INFO - 开始处理视频: /Users/yaosen/PycharmProjects/ffmpeg/./input/2.mp4
+2025-02-07 17:00:31,230 - INFO - ✅ 处理完成: /Users/yaosen/PycharmProjects/ffmpeg/./output/2.mp4
+2025-02-07 17:00:31,230 - INFO - 🎉 所有视频处理完成！
